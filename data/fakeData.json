@@ -1,0 +1,23 @@
+[
+    {
+        "id": "1",
+        "img": "https://i.ibb.co/VNSHCWG/image1.png",
+        "title": "Getting battery stats of system using python",
+        "writer": "Olivia Johnson",
+        "description": "Hi there 👋,Today we will see how we can find battery stats on our system using python3, so let's get started 🚀There is a python library called psutil which is used widely for retrieving information on running processes and system utilization (CPU, memory, disks, network, sensors) in Python. Explaining the whole library is not possible in a single article but for now, we will explain its function sensors_battery() which returns battery statistics.sensors_battery() function doesn't take any argument as input, it returns battery status information as a named tuple including the following values. If no battery is installed or metrics can’t be determined None is returned.percent: battery power left as a percentage.secsleft: a rough approximation of how many seconds are left before the battery runs out of power. If the AC power cable is connected this is set to psutil.POWER_TIME_UNLIMITED. If it can’t be determined it is set to psutil.POWER_TIME_UNKNOWN.power_plugged: True if the AC power cable is connected, False if not, or None if it can’t be determined."
+    },
+    {
+        "id": "2",
+        "img": "https://i.ibb.co/BZfq8TL/image2.png",
+        "title": "Getting system disk usage using python",
+        "writer": "Scarlette Johnson",
+        "description": "Hi there 👋,Today we will see how we can find disk usage of any partition on our system using python3, so let's get started 🚀 There is a python library called psutil which is used widely for retrieving information on running processes and system utilization (CPU, memory, disks, network, sensors) in Python. Explaining the whole library is not possible in a single article but for now, we will explain a few functions of it like disk_usage() which return disk usage statistics about a partition that contains the given path.disk_usage() function takes one argument as input i.e. any directory path or path in the system and it returns disk usage statistics about a partition that contains the given path in the form of a tuple including total, used, and free space expressed in bytes, plus the percentage usage.If the given path doesn't exist in the system then OSError is raised."
+    },
+    {
+        "id": "3",
+        "img": "https://i.ibb.co/RT67tzm/image3.png",
+        "title": "Getting Total number of CPU cores available on system using python",
+        "writer": "Olivia Johnson",
+        "description": "Hi there 👋, Today we will see how we can get the available number of CPU cores on our system via python3, so let's get started 🚀There is a python library called psutil which is used widely for retrieving information on running processes and system utilization (CPU, memory, disks, network, sensors) in Python. Explaining the whole library is not possible in a single article but for now, we will explain one function of it called cpu_count() which can be used for getting available CPUs (either logically or Physically) on the system.Before proceeding further let me clarify to you what are logical CPUs and what are physical CPUs. Logical CPU means the number of physical CPUs multiplied by the number of threads that can run on each core(this is also known as hyperthreading). While physical CPU means the actual number of cores available.Now Let's come to the main point of how we can use the cpu_count() function.cpu_count() function takes one parameter as input i.e. logical (which accepts boolean value). If you want to get the number of logical CPUs then pass logical=True otherwise pass logical=False which will return only physical cores Here is the script for using this function."
+    }
+]
