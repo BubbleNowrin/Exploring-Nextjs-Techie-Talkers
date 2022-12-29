@@ -10,6 +10,5 @@ export default function App({ Component, pageProps, session }) {
       <Component {...pageProps} />
       <Footer></Footer>
     </SessionProvider>
-
   )
 }
